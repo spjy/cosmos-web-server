@@ -1,0 +1,8 @@
+{
+    "extends": "airbnb",
+    "rules": {
+        "comma-dangle": ["warn", "never"],
+        "eol-last": ["warn", "always"],
+        "react/destructuring-assignment": [0, "always", { "ignoreClassFields": "boolean" }]
+    }
+}

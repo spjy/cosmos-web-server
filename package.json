@@ -1,0 +1,42 @@
+{
+  "name": "cosmos-web",
+  "version": "1.0.0",
+  "description": "This repository is for the cosmos web app.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spjy/cosmos-web.git"
+  },
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:3001/",
+      "ws": true
+    }
+  },
+  "author": "Spencer Young",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "cors": "^2.8.4",
+    "dotenv-extended": "^2.0.1",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "https": "^1.0.0",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.0.6",
+    "redis": "^2.8.0",
+    "socket.io": "^2.0.3",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "nodemon": "^1.12.1"
+  }
+}
