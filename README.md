@@ -10,32 +10,23 @@ COSMOS Web is a JavaScript application built using Node.js for the application p
 
 ## Installing
 
-1. Clone the repository
-2. In `/`, rename `.env.example` to `.env`. Replace `SATELLITE_IP` with the IP of the propagator or socket.
-3. Install dependencies in `/` and `/client`:
 ```
-$ npm install
+git clone https://github.com/spjy/cosmos-web-server.git
+cd cosmos-web-server
+npm install
 ```
-4. Install nodemon globally:
+
+Modify the `.env` file to have the correct variables.
+
 ```
-$ npm install -g nodemon
+MONGO_URL=mongodb://url # URL to MongoDB server
+SATELLITE_IP=127.0.0.1 # IP to receive telemetry live/historical data
 ```
 
 ## Running
 
-1. Run server in `/`:
 ```
-$ npm start
-```
-2. Run client in `/client`:
-```
-$ npm start
-```
-3. Access the site at http://localhost:3000
-
-4. Run the COSMOS Propagator (simple)
-```
-$ propagator_simple
+npm start
 ```
 
 ## Directory Structure
