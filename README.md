@@ -16,7 +16,7 @@ cd cosmos-web-server
 npm install
 ```
 
-Modify the `.env` file to have the correct variables.
+Duplicate the `.env.example` file and name it `.env`. Enter the correct values for each variable.
 
 ```
 MONGO_URL=mongodb://url # URL to MongoDB server
